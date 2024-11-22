@@ -1,1 +1,0 @@
-/ const somaQuadradoDiferenca = quadradoDiferenca.reduce((soma, quadrado) => soma + quadrado, 0);

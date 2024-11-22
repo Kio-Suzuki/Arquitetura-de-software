@@ -1,0 +1,14 @@
+{
+  "name": "arquitetura-de-software",
+  "version": "1.0.0",
+  "description": "Atividades da disciplina de Arquitetura de Software",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "validator": "^13.12.0"
+  }
+}
