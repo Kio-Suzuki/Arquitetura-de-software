@@ -1,8 +1,10 @@
 const Contato = require('./contato');
+const BuscaStrategy = require('./BuscaStrategy');
 
 class GerenciadorContato {
   constructor() {
     this.contatos = [];
+    this.buscaStrategy = null;
   }
 
   adicionarContato(contato) {
@@ -21,6 +23,16 @@ class GerenciadorContato {
 
   listarContatos() {
     return this.contatos;
+  }
+  setBuscaStrategy(buscaStrategy) {
+    this.buscaStrategy = buscaStrategy;
+  }
+
+  buscarContatos(termo) {
+    if (this.buscaStrategy === null) {
+      throw new Error("Estratégia de busca não definida");
+    }
+    return this.buscaStrategy.buscar(this.contatos, termo);
   }
 }
 

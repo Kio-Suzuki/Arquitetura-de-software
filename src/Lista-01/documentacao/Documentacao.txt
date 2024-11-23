@@ -1,0 +1,23 @@
+ALUNOS: Allisson Akio Suzuki 			RA: 2476495
+	Jhonatan Santana Giacomasi Barros 	RA: 2331420
+
+
+=== PADRÃO DECORATOR ===
+
+Escolhemos o padrão estrutural Decorator justamente por ele permitir responsabilidades adicionais a um objeto. Como exemplo criamos uma classe para validar as informações do contato, método que não existia na GerenciadorContato original. 
+
+const gerenciador = new GerenciadorContato();
+const listaContatos = new GerenciadorContatoValidacao(gerenciador);
+
+Instânciamos um gerenciador que é passado para o seu decorator, agora o método adicionarContato passa a validar o nome, telefone e o email e a classe GerenciadorContato continua sem nenhuma modificação.
+
+=== PADRÃO STRATEGY ===
+
+A escolha do padrão de projeto comportamental escolhido foi Strategy, com ele conseguimos realizar o desacoplamento de uma classe, para realizar a criação de novos métodos sem interferir diretamente no classe principal, partir de uma interface, seria como um padrão de arquitetura hexagonal, utilizado com diversos adaptadores de entrada, saída, assim criando novas rotas, criando estratégias de desenvolvimento, deixando o sistema mais robusto.
+criei uma interface chamada BuscaStrategy com a variável Contato, termo com as seguintes classes.
+
+BuscaPorEmail      extendendo BuscaStrategy filtrando email    contato.email
+BuscaPorTelefone   extendendo BuscaStrategy filtrando telefone contato.telefone
+BuscaPornome       extendendo BuscaStrategy filtrando nome     contato.nome
+
+ambas criadas apartir da interface.
