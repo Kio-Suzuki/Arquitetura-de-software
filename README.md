@@ -4,6 +4,7 @@
   <a href="#at02">Atividade 02</a></br>
   <a href="#at03">Atividade 03</a></br>
   <a href="#at04">Atividade 04</a></br>
+  <a href="#at05">Atividade 05</a></br>
 </p>
 
 ## Listas
@@ -126,3 +127,43 @@ Instruções:
 3. Você pode adicionar funções auxiliares, renomear variáveis e simplificar a lógica, se necessário.
 4. Comente suas alterações explicando as técnicas de refatoração que foram aplicadas e por que elas melhoram o código.
 
+***
+</br>
+
+<h2 id="at05" style="font-weight: bold;">📝 Atividade 05</h2>
+
+Criar um ambiente de desenvolvimento local que implemente o padrão MVC (Model-View-Controller).
+
+**Instruções**
+
+Parte 1: Configuração do Ambiente para MVC
+
+**1. Escolha um framework MVC:**
+
+- Node.js com Express: Um framework leve e flexível para criar aplicações web.
+- Django (Python): Framework robusto com suporte nativo a MVC.
+- Spring Boot (Java): Para aplicações mais estruturadas em Java.
+- Ruby on Rails: Simples e ideal para protótipos rápidos.
+
+**2. Passo a Passo:**
+
+- Instale as dependências do framework escolhido.
+- Node.js: npm init -y seguido de npm install express.
+- Django: pip install django.
+- Spring Boot: Configure um projeto com Spring Initializr.
+
+- Configure uma estrutura básica de diretórios
+
+```bash
+/project-root
+├── /models
+├── /views
+├── /controllers
+├── /routes (opcional para frameworks com roteamento separado)
+├── server/app.py|.js|.java (arquivo principal)
+```
+
+**Implemente uma funcionalidade básica:**
+
+1. Crie uma página inicial (/) que exiba uma mensagem "Ambiente configurado".
+2. Configure um modelo simples para navegar um parâmetro que, por meio de um controlador, passe por alguma transformação lógica.
