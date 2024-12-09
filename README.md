@@ -5,7 +5,7 @@
   <a href="#at04">Atividade 04</a>
 </p>
 
-<h2 id="at01" style="font-weight: bold;">Atividade 01</h2>
+<h2 id="at01" style="font-weight: bold;">📝 Atividade 01</h2>
 
 ![Diagrama de classes](./Atividade-01/Diagrama.png)
 
@@ -13,7 +13,10 @@
 2. Implemente as classes conforme o diagrama apresentado
 3. Utilize módulos para organizar suas classes em um projeto Node.js
 
-<h2 id="at02" style="font-weight: bold;">Atividade 02</h2>
+***
+
+
+<h2 id="at02" style="font-weight: bold;">📝 Atividade 02</h2>
 
 <h3 style="font-weight: bold;">1. Descrição do Problema</h3>
 
@@ -30,7 +33,10 @@ Para simplificar a interação do cliente com o sistema, você decidiu usar o pa
 
 <h3 style="font-weight: bold;">2. Crie um exemplo de modelagem que represente a diferença entre os padrões comportamentais State e Strategy (utilize UML)</h3>
 
-<h2 id="at03" style="font-weight: bold;">Atividade 03</h2>
+***
+
+
+<h2 id="at03" style="font-weight: bold;">📝 Atividade 03</h2>
 
 <h3 style="font-weight: bold;">1. Descrição do Problema</h3>
 
@@ -46,7 +52,10 @@ Você precisa criar uma estrutura que permita representar essa hierarquia de fun
 4. Implemente um método que permita calcular o salário total de toda a organização, percorrendo recursivamente a estrutura hierárquica.
 5. Teste a sua implementação, mostrando como você pode adicionar funcionários e departamentos, calcular o salário total e realizar outras operações na estrutura.
 
-<h2 id="at04" style="font-weight: bold;">Atividade 04</h2>
+***
+
+
+<h2 id="at04" style="font-weight: bold;">📝 Atividade 04</h2>
 
 <h3 style="font-weight: bold;">Exercício 1</h3>
 
