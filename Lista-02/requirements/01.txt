@@ -1,0 +1,30 @@
+Requisito 01
+============
+
+Apresentar um relatório HTML com os nomes das cidades do país.
+Os nomes das cidades podem ser extraídos do arquivo ./data/cidades-2.json
+
+O relatório deve ser gerado seguindo o seguinte formato HTML.
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Relatório de Nomes de Cidades</title>
+  </head>
+  <body>
+    <h1>Relatório de Nomes de Cidades</h1>
+    <ul>
+      <li>Abatiá</li>
+      <li>Abacaxibe</li>
+      <li>...</li>
+    </ul>
+  </body>
+</html>
+
+
+Refinamento do requisito:
+-------------------------
+1. Ler o arquivo ./data/cidades-2.json (usar o método readFileSync da API fs);
+2. Fazer o parse dos dados JSON para um vetor de nomes de cidades;
+3. Gerar o arquivo HTML com os nomes das cidades.

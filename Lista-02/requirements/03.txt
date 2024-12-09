@@ -1,0 +1,27 @@
+Requisito 03
+============
+
+Apresentar um relatório com outro formato de HTML.
+
+O relatório deve ser gerado seguindo o seguinte formato.
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Relatório de Nomes de Cidades</title>
+  </head>
+  <body>
+    <header>
+      <h1>Relatório de Nomes de Cidades</h1>
+    </header>
+    <main>
+      <ul>
+        <li><span class="cidade">Abatiá</span> - AL</li>
+        <li><span class="cidade">Abacaxibe</span> - AL</li>
+        <li><span class="cidade">...</span> - ...</li>
+      </ul>
+    </main>
+  </body>
+</html>
+

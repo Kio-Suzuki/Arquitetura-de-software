@@ -1,0 +1,11 @@
+Requisito 02
+============
+
+Permitir que seja gerado um relatório TXT também com os nomes das cidades do país.
+O relatório deve ser gerado seguindo o seguinte formato:
+
+Relatório de Nomes de Cidades
+=============================
+* Abatiá
+* Acabo
+* ...
