@@ -1,8 +1,15 @@
-<p align="center">
-  <a href="#at01">Atividade 01</a>
-  <a href="#at02">Atividade 02</a>
-  <a href="#at03">Atividade 03</a>
-  <a href="#at04">Atividade 04</a>
+## Atividades
+<p>
+  <a href="#at01">Atividade 01</a></br>
+  <a href="#at02">Atividade 02</a></br>
+  <a href="#at03">Atividade 03</a></br>
+  <a href="#at04">Atividade 04</a></br>
+</p>
+
+## Listas
+<p>
+  <a href="#at01">Lista 01</a></br>
+  <a href="#at02">Lista 02</a></br>
 </p>
 
 <h2 id="at01" style="font-weight: bold;">📝 Atividade 01</h2>
@@ -14,7 +21,7 @@
 3. Utilize módulos para organizar suas classes em um projeto Node.js
 
 ***
-
+</br>
 
 <h2 id="at02" style="font-weight: bold;">📝 Atividade 02</h2>
 
@@ -34,7 +41,7 @@ Para simplificar a interação do cliente com o sistema, você decidiu usar o pa
 <h3 style="font-weight: bold;">2. Crie um exemplo de modelagem que represente a diferença entre os padrões comportamentais State e Strategy (utilize UML)</h3>
 
 ***
-
+</br>
 
 <h2 id="at03" style="font-weight: bold;">📝 Atividade 03</h2>
 
@@ -53,7 +60,7 @@ Você precisa criar uma estrutura que permita representar essa hierarquia de fun
 5. Teste a sua implementação, mostrando como você pode adicionar funcionários e departamentos, calcular o salário total e realizar outras operações na estrutura.
 
 ***
-
+</br>
 
 <h2 id="at04" style="font-weight: bold;">📝 Atividade 04</h2>
 
