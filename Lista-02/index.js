@@ -1,20 +1,15 @@
-import CidadesHTMLReport from './src/CidadesHTMLReporter.js';
-import CidadesTXTReport from './src/CidadesTXTReporter.js';
+import HtmlStrategy from './src/comportamental/htmlStrategy.js';
+import TxtStrategy from './src/comportamental/txtStrategy.js';
+import CityFactory from './src/criacional/cityFactory.js';
+import CityAdapter from './src/estrutural/cityAdapter.js';
 
-const [cmd, filename, format] = process.argv;
+const adapter = new CityAdapter();
+adapter.obterCidades('./data/cidades-2.json'); 
+const cities = adapter.getCidades();
 
+const txtFormatter = new TxtStrategy();
+const htmlFormatter = new HtmlStrategy();
+const cityFactory = new CityFactory(txtFormatter);
 
-if (format === 'html') {
-  let reporter = new CidadesHTMLReport();
-  reporter.ler('./data/cidades-2.json');
-  reporter.parse();
-  let html = reporter.reportar();
-  console.log(html);
-}
-if (format === 'txt') {
-  let reporter = new CidadesTXTReport();
-  reporter.ler('./data/cidades-2.json');
-  reporter.parse();
-  let html = reporter.reportar();
-  console.log(html);
-}
+const report = cityFactory.createCityReporter(cities);
+console.log(report);
