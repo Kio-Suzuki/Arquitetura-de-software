@@ -1,3 +1,5 @@
+<h1>Este repositório contém as atividades desenvolvidas para a disciplina Arquitetura de Software, ministrada no 6º semestre do curso de Engenharia de Software da Universidade Tecnológica Federal do Paraná - UTFPR.</h1>
+
 ## Atividades
 <p>
   <a href="#at01">Atividade 01</a></br>
