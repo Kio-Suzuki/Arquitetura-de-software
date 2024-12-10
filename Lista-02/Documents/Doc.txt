@@ -3,12 +3,33 @@
 # Criacional
 
 Factory
+O padrão factory permite criar objetos que pode ser determinado por parâmetro.
 
 # Estrutural
 
 Adapter
+Torna os dados compativeis com os métodos de formatação.
 
 # Comportamental
 
 Strategy
-Me permite 
+Permite alternar entre os métodos de formatação da lista
+
+## Refatoração
+
+-Single Responsibility Principle
+O código inicial possuia 2 módulos: um para lista html e outro para lista txt. Esses módulos eram autosuficientes, dentro deles 
+estava toda a lógica para:
+1. ler o arquivo base (JSON com as cidades), 
+2. converter novamente em JSON e
+3. formatar a saída desejada 
+
+Após a aplicação do padrões de projeto e da refatoração essas funcionalidades estão isoladas e agora eu posso reaproveitar 
+esses módulos
+
+-Open-Closed Principle
+Posso implementar novos formatos de listas sem precisar mexer na lógica de criação de leitura e conversão da fonte de dados.
+
+
+
+
