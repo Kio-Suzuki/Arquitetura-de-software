@@ -9,8 +9,8 @@
 
 ## Listas
 <p>
-  <a href="#at01">Lista 01</a></br>
-  <a href="#at02">Lista 02</a></br>
+  <a href="#li01">Lista 01</a></br>
+  <a href="#li02">Lista 02</a></br>
 </p>
 
 <h2 id="at01" style="font-weight: bold;">📝 Atividade 01</h2>
@@ -69,7 +69,7 @@ Você precisa criar uma estrutura que permita representar essa hierarquia de fun
 
 Refatore o seguinte trecho de código JS para torná-lo mais legível e eficiente. Além disso, aplique o princípio "Replace Temp with Query":
 
-```bash
+```javascript
 function calculateTotalPrice(products) {
     let total = 0;
     let discount = 0.1;
@@ -96,7 +96,7 @@ Você deve refatorar o código acima, removendo as variáveis temporárias total
 
 Você foi designado para revisar e refatorar um código legado que realiza cálculos de estatísticas de uma empresa. O código original é funcional, mas está difícil de entender e manter. Sua tarefa é refatorar o código, aplicando pelo menos três técnicas de refatoração para torná-lo mais legível, eficiente e fácil de dar manutenção.
 
-```bash
+```javascript
 function calcularMedia(valores) {
     let soma = 0;
     for (let i = 0; i < valores.length; i++) {
@@ -167,3 +167,40 @@ Parte 1: Configuração do Ambiente para MVC
 
 1. Crie uma página inicial (/) que exiba uma mensagem "Ambiente configurado".
 2. Configure um modelo simples para navegar um parâmetro que, por meio de um controlador, passe por alguma transformação lógica.
+
+***
+</br>
+
+<h2 id="li01" style="font-weight: bold;">📌 Lista 01</h2>
+
+**Objetivo:** Deve-se aplicar padrões de projeto em JavaScript, tanto estruturais quanto comportamentais em um contexto prático.
+
+**Problema:** Você foi contratado para desenvolver um sistema de gerenciamento de contatos em JavaScript. O sistema deve permitir aos usuários adicionar, remover e listar contatos. Além disso, eles devem ser capazes de buscar contatos por nome.
+
+**Requisitos Iniciais:**
+
+1. Implemente uma classe Contato que represente um contato com os seguintes atributos: nome, telefone e email.
+2. Implemente uma classe GerenciadorContatos que possua métodos para adicionar, remover e listar contatos. Este gerenciador deve manter uma lista de contatos.
+3. Implemente uma interface simples de linha de comando (CLI) que permita aos usuários interagirem com o sistema (adicionar, remover, listar e buscar contatos).
+4. Utilize um padrão de projeto estrutural para garantir que a adição e remoção de contatos possam ser facilmente estendidas no futuro, sem modificar o código existente.
+5. Utilize um padrão de projeto comportamental para implementar a funcionalidade de busca de contatos, garantindo que esta possa variar independentemente dos algoritmos de busca.
+
+**Instruções Adicionais:**
+
+- Você pode escolher qualquer padrão de projeto estrutural e comportamental para implementar os requisitos.
+- Documente o seu código de forma clara, explicando a escolha dos padrões de projeto utilizados.
+- Siga as melhores práticas de desenvolvimento JavaScript e padrões de codificação.
+- Teste o seu sistema para garantir que ele atende aos requisitos especificados.
+
+***
+</br>
+
+<h2 id="li02" style="font-weight: bold;">📌 Lista 02</h2>
+
+**Design Patterns aplicada com refatoração**
+
+Com base no sistema abaixo:  
+
+[GitHub](https://github.com/watinha/es46a-2023-2/tree/strategy/01-design-patterns-template-strategy)
+
+Aplicar um padrão de projeto criacional, estrutural e um comportamental. Justifique o porque das escolhas em documentação que aponte, ainda, tres refatorações (use os princípios SOLID). Deve ser construido um script de teste, que garanta a consistencia das saídas esperadas após as alterações.
