@@ -1,0 +1,14 @@
+## Padrões de projeto
+
+# Criacional
+
+Factory
+
+# Estrutural
+
+Adapter
+
+# Comportamental
+
+Strategy
+Me permite 
