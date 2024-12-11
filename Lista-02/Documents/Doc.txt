@@ -3,7 +3,7 @@
 # Criacional
 
 Factory
-O padrão factory permite criar objetos que pode ser determinado por parâmetro.
+O padrão factory permite criar objetos que pode ser determinado dinamicamente.
 
 # Estrutural
 
@@ -21,7 +21,7 @@ Permite alternar entre os métodos de formatação da lista
 O código inicial possuia 2 módulos: um para lista html e outro para lista txt. Esses módulos eram autosuficientes, dentro deles 
 estava toda a lógica para:
 1. ler o arquivo base (JSON com as cidades), 
-2. converter novamente em JSON e
+2. processa os dados,
 3. formatar a saída desejada 
 
 Após a aplicação do padrões de projeto e da refatoração essas funcionalidades estão isoladas e agora eu posso reaproveitar 
@@ -29,6 +29,9 @@ esses módulos
 
 -Open-Closed Principle
 Posso implementar novos formatos de listas sem precisar mexer na lógica de criação de leitura e conversão da fonte de dados.
+
+-Dependency Inversion Principle
+A factory aceita qualquer classe desde que ela implemente o método format
 
 
 
