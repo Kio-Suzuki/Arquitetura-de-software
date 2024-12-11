@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1733878260582" clover="3.2.0">
+  <project timestamp="1733878260582" name="All files">
+    <metrics statements="11" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="4" elements="18" coveredelements="9" complexity="0" loc="11" ncloc="11" packages="3" files="3" classes="3"/>
+    <package name="comportamental">
+      <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="txtStrategy.js" path="C:\Users\kiosu\Documents\Meus Projetos\Arquitetura-de-software\Lista-02\src\comportamental\txtStrategy.js">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="criacional">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="cityFactory.js" path="C:\Users\kiosu\Documents\Meus Projetos\Arquitetura-de-software\Lista-02\src\criacional\cityFactory.js">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="estrutural">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <file name="cityAdapter.js" path="C:\Users\kiosu\Documents\Meus Projetos\Arquitetura-de-software\Lista-02\src\estrutural\cityAdapter.js">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
