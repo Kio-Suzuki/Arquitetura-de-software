@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Notebook",
+    "price": 3000,
+    "quantity": 2
+  },
+  {
+    "id": 2,
+    "name": "Smartphone",
+    "price": 1500,
+    "quantity": 90
+  },
+  {
+    "id": 3,
+    "name": "Keyboard",
+    "price": 200,
+    "quantity": 0
+  },
+  {
+    "id": 4,
+    "name": "Mouse",
+    "price": 149,
+    "quantity": 50
+  },
+  {
+    "id": 5,
+    "name": "Monitor",
+    "price": 899,
+    "quantity": 10
+  },
+  {
+    "id": 6,
+    "name": "Headphones",
+    "price": 199,
+    "quantity": 25
+  },
+  {
+    "id": 7,
+    "name": "Mousepad",
+    "price": 99,
+    "quantity": 100
+  },
+  {
+    "id": 8,
+    "name": "Webcam",
+    "price": 149,
+    "quantity": 30
+  }
+]
