@@ -13,6 +13,7 @@
 <p>
   <a href="#li01">Lista 01</a></br>
   <a href="#li02">Lista 02</a></br>
+  <a href="#li03">Lista 03</a></br>
 </p>
 
 <h2 id="at01" style="font-weight: bold;">📝 Atividade 01</h2>
@@ -206,3 +207,39 @@ Com base no sistema abaixo:
 [GitHub](https://github.com/watinha/es46a-2023-2/tree/strategy/01-design-patterns-template-strategy)
 
 Aplicar um padrão de projeto criacional, estrutural e um comportamental. Justifique o porque das escolhas em documentação que aponte, ainda, tres refatorações (use os princípios SOLID). Deve ser construido um script de teste, que garanta a consistencia das saídas esperadas após as alterações.
+
+<h2 id="li03" style="font-weigth: bold;">📌 Lista 03</h2> 
+
+Você deve projetar uma simulação de arquitetura de microsserviços para um sistema de gerenciamento de pedidos. Embora a comunicação entre serviços em um ambiente real seja feita por APIs, nesta atividade, você deve simular a interação entre os serviços localmente, utilizando métodos e objetos.
+
+**Requisitos:**
+
+1. Descrição do sistema:</br>
+O sistema de gerenciamento de pedidos deve ser composto por pelo menos 4 microsserviços, cada um representando uma responsabilidade específica:
+
+- Serviço de Autenticação: Gerencia o login dos usuários e autentica os acessos ao sistema.
+- Serviço de Catálogo de Produtos: Gerencia os dados dos produtos, como nome, preço e estoque.
+- Serviço de Pedidos: Gerencia a criação de pedidos, associando usuários aos itens comprados e calculando o total da compra.
+- Serviço de Pagamentos: Processa os pagamentos de pedidos e altera o estado do pedido para "pago" ou "pendente".
+
+2. Estrutura do projeto:
+
+- Crie uma classe separada para cada microsserviço, com métodos que simulem suas funções principais.
+- Os microsserviços devem se comunicar entre si utilizando instâncias e chamadas de métodos (simulando mensagens).
+
+3. Regras de implementação:
+
+- Cada microsserviço deve conter apenas as funções relacionadas à sua responsabilidade (exemplo: o Serviço de Catálogo não pode alterar dados de pedidos).
+- Simule a comunicação entre os microsserviços utilizando objetos ou mensagens simples, sem criar APIs ou utilizar rede.
+
+4. Exemplo de fluxo:
+
+- Um usuário faz login pelo Serviço de Autenticação.
+- Após autenticado, o usuário visualiza o catálogo de produtos através do Serviço de Catálogo de Produtos.
+- O usuário seleciona itens e os adiciona ao carrinho, criando um pedido no Serviço de Pedidos.
+- O pedido é enviado para o Serviço de Pagamentos, que processa o pagamento e atualiza o status.
+
+5. Controle de Fluxo:
+
+- Adicione um mecanismo de simulação de falhas. Por exemplo, o pagamento pode falhar por saldo insuficiente ou o estoque de um produto pode não estar disponível.
+- Crie logs (mensagens no console) que descrevam cada etapa do processo e as interações entre os serviços.
