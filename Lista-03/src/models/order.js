@@ -1,9 +1,8 @@
 class Order {
-  constructor(user, products, quantity, id = null, status = 'pending', total) {
+  constructor(user, products, id = null, status = 'pending', total) {
     this.id = id;
     this.user = user;
-    this.products = products;
-    this.quantity = quantity;
+    this.products = [];
     this.status = status;
     this.total = total;
   }

@@ -1,26 +1,22 @@
 [
   {
     "id": 1,
-    "user": "kio",
-    "products": "Mouse",
-    "quantity": 3,
-    "status": "pending",
-    "total": 447
-  },
-  {
-    "id": 2,
-    "user": "kio",
-    "products": "Keyboard",
-    "quantity": 3,
+    "user": "user",
+    "products": {
+      "0": {
+        "id": 8,
+        "name": "Keyboard",
+        "price": 249,
+        "quantity": 12
+      },
+      "1": {
+        "id": 7,
+        "name": "Monitor",
+        "price": 899,
+        "quantity": 3
+      }
+    },
     "status": "Payment approved",
-    "total": 600
-  },
-  {
-    "id": 3,
-    "user": "kio",
-    "products": "Keyboard",
-    "quantity": 3,
-    "status": "pending",
-    "total": 600
+    "total": 5685
   }
 ]

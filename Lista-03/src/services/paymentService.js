@@ -32,8 +32,8 @@ class PaymentService {
         return order;
       }
     }
+    return console.log('Order alredy finished!');
   }
 }
-
 
 module.exports = PaymentService;

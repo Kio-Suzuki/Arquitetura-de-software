@@ -7,58 +7,53 @@ const ProductService = require('./productService');
 class OrderService {
   constructor() {
     this.orders = saveData.readJSON(path);
-
+    console.log(this.orders)
+    this.cart = [];
     this.currentId =
       this.orders.length > 0
         ? Math.max(...this.orders.map((p) => p.id)) + 1
         : 1;
   }
 
-  createOrder(user, product, quantity
-  ) {
-    const order = new Order(user, product, quantity);
-
+  addCart(productName, quantity) {
+    
     const stockService = new ProductService();
+    const product = stockService.verifyStock(productName);
 
-    const productName = stockService.verifyStock(product);
-
-    if (!productName) {
+    if (!product) {
       console.log('Product not found!');
       return null;
     }
 
-    if (productName.quantity < quantity) {
+    if (product.quantity < quantity) {
       console.log('Insufficient quantity!');
       return null;
     }
-
-    order.id = this.currentId++;
-    const total = productName.price * quantity;
-    order.total = total
-    stockService.removeProduct(productName.id, quantity);
-    this.orders.push(order);
-    saveData.writeJSON(path, this.orders);
-    console.log(`Order ${order.id} created successfully!`);
-    return order;
+    const existingProducts = this.cart.findIndex((productFind) => productFind.name === product.name);
+    if(existingProducts !== -1){
+      this.cart[existingProducts].quantity += quantity;
+    }else{
+      this.cart.push({...product, 'quantity': quantity})
+    }
   }
 
-  addProduct(user, product, quantity) {
-    if (!Session.loggedIn() || Session.getUser() !== user) {
-      console.log('Please Sign In First!');
+  createOrder(user) {
+    if(this.cart.length !== 0){
+      const order = new Order(user, this.cart);
+      order.id = this.currentId++;
+      const total = this.cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+      order.total = total
+      const stockService = new ProductService();
+      this.cart.forEach(item =>{
+        stockService.removeProduct(item.id, item.quantity);
+      })
+      order.products = {...this.cart};
+      this.orders.push(order);
+      saveData.writeJSON(path, this.orders);
+      console.log(`Order ${order.id} created successfully!`);
+    }else{
+      console.log("Cart empty!")
     }
-
-    let order = this.orders.find((o) => o.user === user);
-
-    if (order) {
-      const existingProduct = order.items.find((i) => i.product === product);
-      if (existingProduct) {
-        existingProduct.quantity += quantity;
-      } else {
-        order.products.push({ product, quantity });
-      }
-    }
-    saveData.writeJSON(path, this.orders);
-    console.log('Product added successfully!');
   }
 }
 

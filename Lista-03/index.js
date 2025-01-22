@@ -9,32 +9,51 @@ const product = new ProductService();
 const order = new OrderService();
 const pay = new PaymentService();
 
-//auth.createUser('kio', 'abc123');
+// Cadastro de usuários
 
-auth.login('kio', 'abc123');
+auth.createUser('user', 'abc123');
 
-// product.addNewProduct('Notebook', 3000,00, 5);
-// product.addNewProduct('Smartphone', 1500, 10);
-// product.addNewProduct('Keyboard', 200, 20);
-// product.addNewProduct('Mouse', 149, 50);
-// product.addNewProduct('Monitor', 899, 10);
-// product.addNewProduct('Headphones', 199, 25);
-// product.addNewProduct('Mousepad', 99, 100);
-// product.addNewProduct('Webcam', 149, 30);
+// Sign In
 
-// const editProduct = { price: 249}
+auth.login('user', 'abc123');
 
-// const updatedProduct = product.editProduct(3, editProduct);
+// Adicionando produtos ao estoque
 
-product.listProducts();
+// product.addNewProduct('Motherboard', 1500, 50);
+// product.addNewProduct('GPU', 5000, 20);
+// product.addNewProduct('Power Supply', 900, 80);
+// product.addNewProduct('SSD', 399, 100);
+// product.addNewProduct('Memory RAM', 359, 200);
+// product.addNewProduct('Water Cooler', 329, 25);
+// product.addNewProduct('Monitor', 899, 50);
+// product.addNewProduct('Keyboard', 249, 80);
+// product.addNewProduct('Mouse', 229, 80);
+// product.addNewProduct('Headset', 299, 100);
 
-// console.log(product.verifyStock('Smartphone'));
+// Conferindo estoque
+
+// product.listProducts();
+
+// Alterando estoque
+
+// product.addProduct(1, 10);
+
+// product.listProducts();
+
+// Adicionando produtos ao carrinho
+
+// order.addCart('Keyboard', 12);
+// order.addCart('Monitor', 3);
+
+// Criando um pedido
 
 // if(Session.loggedIn()) {
-//   order.createOrder(Session.getUser(), 'Keyboard', 3);
+//   order.createOrder(Session.getUser());
 // } else {
 //   console.log('Please Sign In First!');
 // }
 
-pay.payment(2);
+// Realizando pagamento
+
+// pay.payment(1);
 

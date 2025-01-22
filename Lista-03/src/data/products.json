@@ -1,50 +1,62 @@
 [
   {
     "id": 1,
-    "name": "Notebook",
-    "price": 3000,
-    "quantity": 2
+    "name": "Motherboard",
+    "price": 1500,
+    "quantity": 60
   },
   {
     "id": 2,
-    "name": "Smartphone",
-    "price": 1500,
-    "quantity": 10
+    "name": "GPU",
+    "price": 5000,
+    "quantity": 20
   },
   {
     "id": 3,
-    "name": "Keyboard",
-    "price": 200,
-    "quantity": 11
+    "name": "Power Supply",
+    "price": 900,
+    "quantity": 80
   },
   {
     "id": 4,
-    "name": "Mouse",
-    "price": 149,
-    "quantity": 35
+    "name": "SSD",
+    "price": 399,
+    "quantity": 100
   },
   {
     "id": 5,
-    "name": "Monitor",
-    "price": 899,
-    "quantity": 10
+    "name": "Memory RAM",
+    "price": 359,
+    "quantity": 200
   },
   {
     "id": 6,
-    "name": "Headphones",
-    "price": 199,
+    "name": "Water Cooler",
+    "price": 329,
     "quantity": 25
   },
   {
     "id": 7,
-    "name": "Mousepad",
-    "price": 99,
-    "quantity": 100
+    "name": "Monitor",
+    "price": 899,
+    "quantity": 47
   },
   {
     "id": 8,
-    "name": "Webcam",
-    "price": 149,
-    "quantity": 30
+    "name": "Keyboard",
+    "price": 249,
+    "quantity": 68
+  },
+  {
+    "id": 9,
+    "name": "Mouse",
+    "price": 229,
+    "quantity": 80
+  },
+  {
+    "id": 10,
+    "name": "Headset",
+    "price": 299,
+    "quantity": 100
   }
 ]

@@ -16,7 +16,7 @@ class ProductService {
     product.id = this.currentId++;
     this.products.push(product);
     saveData.writeJSON(path, this.products);
-    console.log(`Product ${product.name} added to the catalog successfully!`);
+    console.log(`${product.quantity} unit(s) of ${product.name} have been successfully added to the stock!`);
     return product;
   }
 
