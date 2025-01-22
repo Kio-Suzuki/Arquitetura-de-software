@@ -1,17 +1,19 @@
 const AuthService = require('./src/services/authService')
 const ProductService = require('./src/services/productService');
 const OrderService = require('./src/services/orderService');
+const PaymentService = require('./src/services/paymentService');
 const Session = require('./src/utils/session');
 
 const auth = new AuthService();
 const product = new ProductService();
 const order = new OrderService();
+const pay = new PaymentService();
 
-// auth.createUser('kio', 'abc123');
+//auth.createUser('kio', 'abc123');
 
 auth.login('kio', 'abc123');
 
-// product.addNewProduct('Notebook', 3000, 5);
+// product.addNewProduct('Notebook', 3000,00, 5);
 // product.addNewProduct('Smartphone', 1500, 10);
 // product.addNewProduct('Keyboard', 200, 20);
 // product.addNewProduct('Mouse', 149, 50);
@@ -24,19 +26,15 @@ auth.login('kio', 'abc123');
 
 // const updatedProduct = product.editProduct(3, editProduct);
 
-
 product.listProducts();
 
-product.removeProduct(3, 5);
+// console.log(product.verifyStock('Smartphone'));
 
-product.addProduct(2, 10);
+// if(Session.loggedIn()) {
+//   order.createOrder(Session.getUser(), 'Keyboard', 3);
+// } else {
+//   console.log('Please Sign In First!');
+// }
 
-product.listProducts();
+pay.payment(2);
 
-console.log(product.verifyStock('Smartphone'));
-
-if(Session.loggedIn()) {
-  order.createOrder(Session.getUser(), 'Notebook', 3);
-} else {
-  console.log('Please Sign In First!');
-}

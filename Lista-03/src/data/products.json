@@ -9,19 +9,19 @@
     "id": 2,
     "name": "Smartphone",
     "price": 1500,
-    "quantity": 90
+    "quantity": 10
   },
   {
     "id": 3,
     "name": "Keyboard",
     "price": 200,
-    "quantity": 0
+    "quantity": 11
   },
   {
     "id": 4,
     "name": "Mouse",
     "price": 149,
-    "quantity": 50
+    "quantity": 35
   },
   {
     "id": 5,

@@ -14,7 +14,8 @@ class OrderService {
         : 1;
   }
 
-  createOrder(user, product, quantity) {
+  createOrder(user, product, quantity
+  ) {
     const order = new Order(user, product, quantity);
 
     const stockService = new ProductService();
@@ -32,6 +33,8 @@ class OrderService {
     }
 
     order.id = this.currentId++;
+    const total = productName.price * quantity;
+    order.total = total
     stockService.removeProduct(productName.id, quantity);
     this.orders.push(order);
     saveData.writeJSON(path, this.orders);
@@ -56,10 +59,6 @@ class OrderService {
     }
     saveData.writeJSON(path, this.orders);
     console.log('Product added successfully!');
-  }
-
-  getTotal() {
-    return this.items.reduce((acc, item) => acc + item.price, 0);
   }
 }
 
